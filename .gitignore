@@ -1,46 +1,44 @@
-# --- Unity ---
-[Ll]ibrary/
-[Tt]emp/
-[Oo]bj/
-[Bb]uild/
-[Bb]uilds/
-[Ll]ogs/
-[Pp]lastic/
-[Mm]emory[Cc]aptures/
-[Rr]ecordings/
-[Tt]estResults/
+# Игнорировать служебные папки Unity
+/[Ll]ibrary/
+/[Tt]emp/
+/[Oo]bj/
+/[Bb]uild/
+/[Bb]uilds/
+/[Ll]ogs/
+/[Uu]ser[Ss]ettings/
+/[Mm]emory[Cc]aptures/
+/[Rr]ecordings/
+/[Pp]lastic/
 
-# Игнорировать кэш пакетов, но НЕ папку Packages/
-Packages/PackageCache/
-Packages/com.unity.collab-proxy/
+# Игнорировать кеш пакетов, но НЕ исключать папку Packages целиком
+/Packages/PackageCache/
+!/Packages/manifest.json
+!/Packages/packages-lock.json
 
-# Не игнорировать main файлы пакетов
-!Packages/manifest.json
-!Packages/packages-lock.json
+# Обязательно НЕ игнорировать папку Assets и все .meta файлы в ней
+!/Assets/**
+!/Assets/**/*.meta
 
-# Не игнорировать Assets — тут ваши сцены и объекты
-!Assets/
-!Assets/**/*.meta
+# Не игнорировать ProjectSettings и .meta файлы там
+!/ProjectSettings/**
+!/ProjectSettings/**/*.meta
 
-# Не игнорировать ProjectSettings
-!ProjectSettings/
-!ProjectSettings/**/*.meta
-
-# Не игнорировать .meta-файлы нигде
+# Не игнорировать .meta файлы нигде в проекте
 !*.meta
 
-# Игнорировать ненужные файлы
-*.pidb
-*.suo
+# Игнорировать временные и проектные файлы IDE
+*.csproj
+*.sln
 *.user
 *.userprefs
-*.csproj
-*.unityproj
-*.sln
 *.tmp
 *.bak
-*.swp
+*.pidb
 
-# OS specific files
+# Игнорировать системные файлы
 .DS_Store
 Thumbs.db
+
+# Игнорировать билды и пакеты
+*.apk
+*.unitypackage

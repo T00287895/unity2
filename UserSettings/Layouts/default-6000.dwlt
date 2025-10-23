@@ -381,9 +381,9 @@ MonoBehaviour:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 79}
-    m_SelectedIDs: 3ee60000
-    m_LastClickedID: 58942
-    m_ExpandedIDs: 000000003ee6000000ca9a3bffffff7f
+    m_SelectedIDs: 62e60000
+    m_LastClickedID: 58978
+    m_ExpandedIDs: 0000000062e6000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -440,7 +440,7 @@ MonoBehaviour:
   m_ListAreaState:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
-    m_HadKeyboardFocusLastEvent: 1
+    m_HadKeyboardFocusLastEvent: 0
     m_ExpandedInstanceIDs: c6230000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -558,9 +558,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 6e56ffff
-      m_LastClickedID: -43410
-      m_ExpandedIDs: 2e5bffff
+      m_SelectedIDs: 8056ffff
+      m_LastClickedID: -43392
+      m_ExpandedIDs: 305bffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: Cube
@@ -571,7 +571,7 @@ MonoBehaviour:
           y: 48
           width: 284
           height: 16
-        m_UserData: -43410
+        m_UserData: -43392
         m_IsWaitingForDelay: 0
         m_IsRenaming: 1
         m_OriginalEventType: 7
