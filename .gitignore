@@ -1,44 +1,39 @@
-# Unity .gitignore — шаблон
-# Этот файл должен находиться в корне проекта Unity
+# Unity folders to ignore
+[Ll]ibrary/
+[Tt]emp/
+[Oo]bj/
+[Bb]uild/
+[Bb]uilds/
+[Ll]ogs/
+[Uu]ser[Ss]ettings/
+[Pp]lastic/
+[Mm]emory[Cc]aptures/
+[Rr]ecordings/
 
-/[Ll]ibrary/
-/[Tt]emp/
-/[Oo]bj/
-/[Bb]uild/
-/[Bb]uilds/
-/[Ll]ogs/
-/[Uu]ser[Ss]ettings/
-/Packages/
-/[Pp]lastic/
-/[Mm]emory[Cc]aptures/
-/[Rr]ecordings/
+# Ignore cache in Packages, but keep manifest and other critical files
+Packages/PackageCache/
 
-*.log
-*.tmp
-*.bak
+# Asset meta data should only be ignored when the corresponding asset is also ignored
+# Не игнорировать .meta файлы обязательно!
+!*.meta
+
+# Ignore Visual Studio/MonoDevelop files
 *.pidb
-*.booproj
+*.suo
 *.user
 *.userprefs
 *.csproj
 *.unityproj
 *.sln
-*.suo
-*.VC.db
-*.pdb
-*.mdb
-*.opendb
-*.exe
-*.apk
-*.aab
-*.app
-*.unitypackage
+*.bak
+*.tmp
 
-.vs/
-.idea/
-.gradle/
+# Ignore OS generated files
 .DS_Store
 Thumbs.db
 
-# Не игнорировать .meta файлы — они нужны Unity
-!*.meta
+# Ignore other build output
+*.exe
+*.app
+*.apk
+*.aab
