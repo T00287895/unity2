@@ -1,23 +1,35 @@
-# Unity folders to ignore
+# --- Unity ---
 [Ll]ibrary/
 [Tt]emp/
 [Oo]bj/
 [Bb]uild/
 [Bb]uilds/
 [Ll]ogs/
-[Uu]ser[Ss]ettings/
 [Pp]lastic/
 [Mm]emory[Cc]aptures/
 [Rr]ecordings/
+[Tt]estResults/
 
-# Ignore cache in Packages, but keep manifest and other critical files
+# Игнорировать кэш пакетов, но НЕ папку Packages/
 Packages/PackageCache/
+Packages/com.unity.collab-proxy/
 
-# Asset meta data should only be ignored when the corresponding asset is also ignored
-# Не игнорировать .meta файлы обязательно!
+# Не игнорировать main файлы пакетов
+!Packages/manifest.json
+!Packages/packages-lock.json
+
+# Не игнорировать Assets — тут ваши сцены и объекты
+!Assets/
+!Assets/**/*.meta
+
+# Не игнорировать ProjectSettings
+!ProjectSettings/
+!ProjectSettings/**/*.meta
+
+# Не игнорировать .meta-файлы нигде
 !*.meta
 
-# Ignore Visual Studio/MonoDevelop files
+# Игнорировать ненужные файлы
 *.pidb
 *.suo
 *.user
@@ -25,15 +37,10 @@ Packages/PackageCache/
 *.csproj
 *.unityproj
 *.sln
-*.bak
 *.tmp
+*.bak
+*.swp
 
-# Ignore OS generated files
+# OS specific files
 .DS_Store
 Thumbs.db
-
-# Ignore other build output
-*.exe
-*.app
-*.apk
-*.aab
